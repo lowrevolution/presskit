@@ -7,7 +7,12 @@
 <meta name="description" content="Press kit for Hell is Neon Colored, a minimalist neon action roguelike by Low Revolution. Screenshots, trailer, logos, fact sheet and press contact.">
 <meta property="og:title" content="Hell is Neon Colored — Press Kit">
 <meta property="og:description" content="A minimalist neon action roguelike where you build the gun and the soundtrack is generated while you play.">
-<meta property="og:image" content="assets/logos/header_capsule_920x430.png">
+<!-- og:image and og:url must be ABSOLUTE. Scrapers fetch the tag value directly and do
+     not resolve it against the page, so a relative path yields a link preview with no
+     image — which is exactly the wrong outcome for a URL whose whole job is being pasted
+     into emails, Bluesky posts and article footers. -->
+<meta property="og:image" content="https://lowrevolution.github.io/presskit/assets/logos/header_capsule_920x430.png">
+<meta property="og:url" content="https://lowrevolution.github.io/presskit/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="assets/icons/icon-32.png">
@@ -386,9 +391,14 @@ footer p{margin:0 0 8px}
   </div>
   <p class="dim" style="margin-top:14px">The application icon ladder is the <strong>full mark at every size</strong>. The icon actually shipped in the executable is a <em>mixed</em> ladder &mdash; the full mark at 256/128/64 and the head alone below it, because under about 48&nbsp;px the tail is a wisp and the heart is gone. Use the full mark for artwork and the head for anything small.</p>
   <div class="dl">
-    <a class="primary" href="assets/hell-is-neon-colored-presskit.zip" download>Download everything <small>All assets, one zip</small></a>
-    <a href="assets/logos/" >Logos only</a>
-    <a href="assets/screenshots/">Screenshots only</a>
+    <a class="primary" href="assets/hell-is-neon-colored-presskit.zip" download>Download everything <small>Logos, icons and screenshots &middot; one zip</small></a>
+    <!-- These MUST be repo tree URLs, not "assets/logos/". GitHub Pages does not serve
+         directory listings, so a bare folder href is a 404 in production — and it 404s
+         ONLY there, because python -m http.server auto-generates an index and the links
+         look fine in local preview. The repo browser is the better answer anyway: press
+         can see and grab one file instead of taking the whole pack. -->
+    <a href="https://github.com/lowrevolution/presskit/tree/main/assets/logos">Browse logos</a>
+    <a href="https://github.com/lowrevolution/presskit/tree/main/assets/screenshots">Browse screenshots</a>
   </div>
 </div></section>
 
@@ -441,7 +451,7 @@ footer p{margin:0 0 8px}
     <tr><td>itch.io</td><td><a href="https://revoincubus.itch.io/hell-is-neon-colored">revoincubus.itch.io/hell-is-neon-colored</a></td></tr>
     <tr><td>YouTube</td><td><a href="https://www.youtube.com/watch?v=3RtronvQAzU">youtube.com/watch?v=3RtronvQAzU</a></td></tr>
     <tr><td>Bluesky</td><td><a href="https://bsky.app/profile/lowrevolutiongames.bsky.social">@lowrevolutiongames.bsky.social</a></td></tr>
-    <tr><td>This press kit</td><td><span class="todo">PRESS KIT URL</span></td></tr>
+    <tr><td>This press kit</td><td><a href="https://lowrevolution.github.io/presskit/">lowrevolution.github.io/presskit</a></td></tr>
   </table>
 </div></section>
 
