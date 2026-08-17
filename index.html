@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hell is Neon Colored — Press Kit</title>
+<meta name="description" content="Press kit for Hell is Neon Colored, a minimalist neon action roguelike by Low Revolution. Screenshots, trailer, logos, fact sheet and press contact.">
+<meta property="og:title" content="Hell is Neon Colored — Press Kit">
+<meta property="og:description" content="A minimalist neon action roguelike where you build the gun and the soundtrack is generated while you play.">
+<meta property="og:image" content="assets/logos/header_capsule_920x430.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/icons/icon-32.png">
+<style>
+/* ---------------------------------------------------------------------------
+   Palette lifted straight from src/palette.lua, so the page and the game agree
+   about what colour anything is. Authored in display space, same as the game.
+   --------------------------------------------------------------------------- */
+:root{
+  --bg:#05050a; --panel:#0c0c14; --panel-2:#12121c; --line:#20202e;
+  --ink:#e8e8f2; --ink-dim:#9a9ab0; --ink-faint:#6a6a80;
+  --blue:#8cccff;  /* environment  */
+  --green:#73ff61; /* player, positive */
+  --red:#ff4d52;   /* enemies */
+  --purple:#b859ff;/* weapons */
+  --orange:#ff9e33;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
+  line-height:1.65;font-size:16px;
+  background-image:
+    radial-gradient(ellipse 120% 60% at 50% -10%, rgba(184,89,255,.10), transparent 60%),
+    radial-gradient(ellipse 90% 50% at 50% 110%, rgba(140,204,255,.07), transparent 60%);
+  background-attachment:fixed;
+}
+.wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+a{color:var(--blue);text-decoration:none;border-bottom:1px solid rgba(140,204,255,.3)}
+a:hover{color:#fff;border-bottom-color:#fff}
+h1,h2,h3{line-height:1.2;margin:0}
+code{font-family:var(--mono);font-size:.9em;background:var(--panel-2);padding:2px 6px;border-radius:3px;color:var(--blue)}
+
+/* An unfilled placeholder must be impossible to miss in preview. A press kit
+   that ships reading "[LEGAL NAME]" is worse than one that never shipped. */
+.todo{
+  color:#fff;background:rgba(255,77,82,.18);border:1px dashed var(--red);
+  padding:1px 7px;border-radius:3px;font-family:var(--mono);font-size:.85em;
+  font-weight:600;letter-spacing:.02em;
+}
+
+/* --- hero ---------------------------------------------------------------- */
+header.hero{padding:72px 0 48px;text-align:center;border-bottom:1px solid var(--line)}
+.wordmark{font-size:clamp(38px,7vw,76px);font-weight:800;letter-spacing:-.02em;margin-bottom:6px}
+.wordmark .hell{color:var(--red);text-shadow:0 0 28px rgba(255,77,82,.55)}
+.wordmark .rest{color:var(--green);text-shadow:0 0 28px rgba(115,255,97,.45)}
+.tagline{color:var(--ink-dim);font-size:clamp(15px,2vw,19px);max-width:640px;margin:14px auto 0}
+.hero-key{margin:34px auto 0;max-width:820px;border:1px solid var(--line);border-radius:8px;display:block;width:100%}
+.badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+.badge{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;
+  padding:7px 13px;border:1px solid var(--line);border-radius:999px;color:var(--ink-dim);background:var(--panel)}
+.badge.go{color:var(--green);border-color:rgba(115,255,97,.35)}
+
+/* --- nav ----------------------------------------------------------------- */
+nav{position:sticky;top:0;z-index:20;background:rgba(5,5,10,.92);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0;overflow-x:auto;justify-content:center}
+nav a{display:block;padding:13px 12px;font-size:13px;color:var(--ink-dim);border:0;white-space:nowrap;
+  font-family:var(--mono);letter-spacing:.04em;text-transform:uppercase}
+nav a:hover{color:var(--green);border:0}
+
+/* --- sections ------------------------------------------------------------ */
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+section > .wrap > h2{
+  font-size:13px;font-family:var(--mono);letter-spacing:.18em;text-transform:uppercase;
+  color:var(--purple);margin-bottom:24px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+h3{font-size:19px;margin:28px 0 10px;color:var(--ink)}
+p{margin:0 0 14px}
+.lede{font-size:19px;color:var(--ink)}
+.dim{color:var(--ink-dim)}
+
+/* --- fact sheet ---------------------------------------------------------- */
+table.facts{width:100%;border-collapse:collapse;font-size:15px}
+table.facts td{padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+table.facts td:first-child{
+  width:190px;color:var(--ink-faint);font-family:var(--mono);font-size:12px;
+  letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+table.facts tr:last-child td{border-bottom:0}
+
+/* --- copy blocks --------------------------------------------------------- */
+.copyblock{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:20px 22px;margin:0 0 18px;position:relative}
+.copyblock h4{margin:0 0 12px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink-faint);font-weight:600}
+.copyblock p:last-child{margin-bottom:0}
+/* The long block is the store description verbatim, so it carries that copy's own
+   caps headers and bullet lines. They are <p> and not <h5>/<li> on purpose: the copy
+   button collects paragraphs, and a header the clipboard silently drops is worse than
+   one that is styled by a class. */
+.copyblock .ch{font-family:var(--mono);font-size:12.5px;letter-spacing:.12em;
+  color:var(--purple);font-weight:600;margin:26px 0 11px}
+.copyblock .ch:first-child + .ch, .copyblock h4 + .ch{margin-top:0}
+.copyblock .bul{margin:0 0 8px;padding-left:19px;position:relative;color:var(--ink-dim)}
+.copyblock .bul::before{content:"\2022";position:absolute;left:4px;color:var(--purple)}
+.copybtn{position:absolute;top:14px;right:14px;background:var(--panel-2);color:var(--ink-dim);
+  border:1px solid var(--line);border-radius:5px;padding:5px 11px;font-family:var(--mono);
+  font-size:11px;cursor:pointer;letter-spacing:.06em}
+.copybtn:hover{color:var(--green);border-color:rgba(115,255,97,.4)}
+.copybtn.done{color:var(--green);border-color:var(--green)}
+
+/* --- hook cards ---------------------------------------------------------- */
+.hooks{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.hook{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:22px;border-top:2px solid}
+.hook:nth-child(1){border-top-color:var(--purple)}
+.hook:nth-child(2){border-top-color:var(--green)}
+.hook:nth-child(3){border-top-color:var(--blue)}
+.hook h3{margin:0 0 10px;font-size:17px}
+.hook p{font-size:14.5px;color:var(--ink-dim);margin:0}
+
+/* --- media --------------------------------------------------------------- */
+.embed{position:relative;padding-bottom:56.25%;height:0;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.grid img{width:100%;border:1px solid var(--line);border-radius:6px;display:block;background:var(--panel)}
+.grid figure{margin:0}
+.grid figcaption{font-size:12.5px;color:var(--ink-faint);margin-top:7px;font-family:var(--mono)}
+.logogrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.logogrid .cell{background:#000;border:1px solid var(--line);border-radius:6px;padding:16px;text-align:center}
+/* The developer mark is black ink on white and is the ONE image here not drawn by the
+   game, so it gets a light cell rather than being inverted to match the neon -- editing
+   supplied artwork to fit a page is how a logo stops being the logo. */
+.logogrid .cell.light{background:#f4f4f8}
+.logogrid .cell.light .cap{color:#55556a}
+.logogrid img{max-width:100%;height:auto;display:block;margin:0 auto}
+.logogrid .cap{font-family:var(--mono);font-size:11px;color:var(--ink-faint);margin-top:10px}
+
+/* --- callouts ------------------------------------------------------------ */
+.note{border-left:3px solid var(--green);background:rgba(115,255,97,.05);padding:16px 20px;border-radius:0 6px 6px 0;margin:18px 0}
+.note.warn{border-left-color:var(--orange);background:rgba(255,158,51,.05)}
+.note strong{color:var(--green)}
+.note.warn strong{color:var(--orange)}
+.note p:last-child{margin-bottom:0}
+
+/* --- downloads ----------------------------------------------------------- */
+.dl{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+.dl a{display:inline-block;padding:13px 22px;border-radius:6px;border:1px solid var(--line);
+  background:var(--panel);color:var(--ink);font-size:14.5px;font-weight:600}
+.dl a:hover{border-color:var(--green);color:var(--green)}
+.dl a.primary{background:rgba(115,255,97,.1);border-color:rgba(115,255,97,.45);color:var(--green)}
+.dl a small{display:block;font-weight:400;font-size:12px;color:var(--ink-faint);margin-top:2px}
+
+ul.feat{margin:0;padding-left:20px;color:var(--ink-dim)}
+ul.feat li{margin-bottom:9px}
+ul.feat strong{color:var(--ink)}
+
+footer{padding:44px 0 64px;text-align:center;color:var(--ink-faint);font-size:13.5px}
+footer p{margin:0 0 8px}
+@media(max-width:640px){
+  table.facts td:first-child{width:130px;font-size:11px}
+  section{padding:40px 0}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="wordmark"><span class="hell">HELL IS</span> <span class="rest">NEON COLORED</span></div>
+    <p class="tagline">A neon action roguelike where you build the gun — and the soundtrack is generated while you play.</p>
+    <div class="badges">
+      <span class="badge">Windows &middot; Linux</span>
+      <span class="badge">Single-player</span>
+      <span class="badge go">Steam &middot; 11 November 2026</span>
+      <span class="badge">Free demo on itch.io</span>
+    </div>
+    <img class="hero-key" src="assets/logos/main_capsule_1232x706.png" alt="Hell is Neon Colored key art">
+  </div>
+</header>
+
+<nav><div class="wrap"><ul>
+  <li><a href="#facts">Fact sheet</a></li>
+  <li><a href="#hooks">The hooks</a></li>
+  <li><a href="#copy">Descriptions</a></li>
+  <li><a href="#trailer">Trailer</a></li>
+  <li><a href="#screens">Screenshots</a></li>
+  <li><a href="#art">Logos &amp; art</a></li>
+  <li><a href="#audio">Audio</a></li>
+  <li><a href="#permission">Permissions</a></li>
+  <li><a href="#dev">Developer</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul></div></nav>
+
+<!-- ===================== FACT SHEET ===================== -->
+<section id="facts"><div class="wrap">
+  <h2>Fact sheet</h2>
+  <table class="facts">
+    <tr><td>Title</td><td>Hell is Neon Colored</td></tr>
+    <tr><td>Developer</td><td>Low Revolution &mdash; solo developer, Ireland</td></tr>
+    <tr><td>Publisher</td><td>Self-published</td></tr>
+    <tr><td>Release date</td><td>11 November 2026</td></tr>
+    <tr><td>Platforms</td><td>Windows (x64), Linux</td></tr>
+    <tr><td>Price</td><td>$12.99 USD <span class="dim">&mdash; regional pricing via Steam</span></td></tr>
+    <tr><td>Steam</td><td><a href="https://store.steampowered.com/app/5091990/Hell_is_Neon_Colored/">store.steampowered.com/app/5091990</a> <span class="dim">&mdash; App ID 5091990</span></td></tr>
+    <tr><td>itch.io</td><td><a href="https://revoincubus.itch.io/hell-is-neon-colored">revoincubus.itch.io/hell-is-neon-colored</a> <span class="dim">&mdash; free build</span></td></tr>
+    <tr><td>Demo</td><td>Free public build on itch.io; Steam demo pending approval</td></tr>
+    <tr><td>Engine</td><td>LÖVE 11.5 (Lua) &mdash; the framework behind <em>Balatro</em></td></tr>
+    <tr><td>Players</td><td>Single-player only. No multiplayer, no online play.</td></tr>
+    <tr><td>Languages</td><td>English</td></tr>
+    <tr><td>Input</td><td>Keyboard &amp; mouse, full controller support &mdash; <strong>every control rebindable on both</strong></td></tr>
+    <tr><td>Monetisation</td><td><strong>None.</strong> No in-app purchases, no microtransactions, no currency. The price is the whole price.</td></tr>
+    <tr><td>Data collected</td><td><strong>None.</strong> No analytics, no telemetry, no ads, no third-party SDKs. The game never touches a network.</td></tr>
+    <tr><td>Content</td><td>Abstract, combat-focused. Bright high-contrast visuals &mdash; photosensitivity warning shown on every launch; bloom, screen shake and motion effects each have their own off switch.</td></tr>
+    <tr><td>Press contact</td><td><a href="mailto:lowrevolution@pm.me">lowrevolution@pm.me</a></td></tr>
+    <tr><td>Social</td><td><a href="https://bsky.app/profile/lowrevolutiongames.bsky.social">Bluesky</a> &middot; <a href="https://www.youtube.com/watch?v=3RtronvQAzU">YouTube</a></td></tr>
+  </table>
+</div></section>
+
+<!-- ===================== HOOKS ===================== -->
+<section id="hooks"><div class="wrap">
+  <h2>What makes it different</h2>
+  <div class="hooks">
+    <div class="hook">
+      <h3>You build the gun</h3>
+      <p>A weapon is a <strong>powering</strong>, a <strong>weapon</strong> and a <strong>rider</strong>. The powering decides when it may fire and what that costs &mdash; an energy pool, a heat sink that locks you out if you push it, a flywheel you wind up by standing still, a tithe paid in your own health, or a gun that only fires on the beat of the music. Over three hundred authored combinations, and each powering is at budget when it is up: they differ in <em>how they fail</em>, never in how much they pay.</p>
+    </div>
+    <div class="hook">
+      <h3>There are no audio files</h3>
+      <p>Ten music tracks and ninety-nine sound effects are synthesized sample by sample on an emulated eight-voice sound chip. The score reads the run &mdash; it sinks into its own low end when you are losing, speeds up when you take a power-up, and audibly thins out when a firefight steals its voices, because on real hardware it would have.</p>
+    </div>
+    <div class="hook">
+      <h3>Nothing here is a file</h3>
+      <p>The game ships with <strong>zero binary assets</strong>. Every sound, shader, sprite, particle, the store art and the executable icon are drawn by the game's own code. The whole thing is Lua and the archive contains nothing but source.</p>
+    </div>
+  </div>
+
+  <h3>Features</h3>
+  <ul class="feat">
+    <li><strong>Three modes</strong> &mdash; Quick Play (a single descent), Endless (climb until it kills you), and the Gauntlet (a run of levels with a boss at the end).</li>
+    <li><strong>Five bands of hell</strong> &mdash; MORTAL is the game. Clear it and HELL I opens, then II, III, IV. Each band buys new threats rather than longer health bars: mobs start carrying your own weapons against you, minibosses appear inside ordinary waves, and bosses arrive as formations of linked bodies.</li>
+    <li><strong>The Audio Studio</strong> &mdash; an unlockable music tool inside the game. Pick a track, drive the tempo, stack a second layer in sync, drag a ten-band EQ, watch a spectrum analyser, and record the result to a <code>.wav</code> you can open anywhere.</li>
+    <li><strong>223 achievements</strong> paying out score, mode unlocks and 23 cosmetics &mdash; trails, a hue-rotated arsenal, costumes, and nine followers including three pocket bosses.</li>
+    <li><strong>Seven enemy affixes</strong> and themed packs, each taught once and then remembered forever.</li>
+    <li><strong>Hunts</strong> &mdash; a mimic disguised as a wall, a quarry that runs the fight toward you, an assassination target behind a ring of guards.</li>
+    <li><strong>Deep accessibility options</strong> &mdash; bloom, dynamic lighting, wall shadows, screen shake and hit stop each with their own switch and strength, plus auto-aim and full rebinding.</li>
+  </ul>
+</div></section>
+
+<!-- ===================== DESCRIPTIONS ===================== -->
+<section id="copy"><div class="wrap">
+  <h2>Descriptions <span class="dim" style="font-family:var(--sans);text-transform:none;letter-spacing:0;font-size:13px">&mdash; copy and paste, no attribution needed</span></h2>
+
+  <div class="copyblock">
+    <button class="copybtn" onclick="cp(this)">Copy</button>
+    <h4>One sentence</h4>
+    <p>A neon action roguelike where you build the gun and the soundtrack is generated while you play.</p>
+  </div>
+
+  <div class="copyblock">
+    <button class="copybtn" onclick="cp(this)">Copy</button>
+    <h4>Short &mdash; ~50 words</h4>
+    <p>Hell is Neon Colored is a minimalist action roguelike drawn in five colours and lit entirely by the things trying to kill you. Assemble weapons from eight power sources and twenty-odd parts, then find out how far down your build can take you. Every sound you hear is synthesized while you play.</p>
+  </div>
+
+  <div class="copyblock">
+    <button class="copybtn" onclick="cp(this)">Copy</button>
+    <h4>Medium &mdash; ~100 words</h4>
+    <p>Hell is Neon Colored is a minimalist neon action roguelike built in LÖVE, the framework behind Balatro. A weapon here is three decisions: a powering that decides when you may fire and what that costs, a weapon that decides what comes out, and a rider that decides what happens next &mdash; over three hundred authored combinations, each fair by construction. Five difficulty bands escalate by adding threats rather than health bars. And there are no audio files in the game: ten tracks and ninety-nine effects run on an emulated eight-voice sound chip, synthesized sample by sample as you play.</p>
+  </div>
+
+  <div class="copyblock">
+    <button class="copybtn" onclick="cp(this)">Copy</button>
+    <h4>Long &mdash; the store description, verbatim</h4>
+    <p class="ch">HELL IS NEON COLORED</p>
+    <p>Descend through a procedurally built underworld drawn in five colours and lit entirely by the things trying to kill you. Every floor is generated the moment you enter it. Every weapon is something you assembled. Every sound you hear &mdash; the score, the explosions, the sword &mdash; is synthesized note by note while you play. There are no audio files in this game.</p>
+
+    <p class="ch">BUILD THE WEAPON, NOT THE LOADOUT</p>
+    <p>A weapon here is three decisions.</p>
+    <p>A powering decides when it may fire and what that costs &mdash; an energy pool, a heat sink that locks out when you push it, a magazine, a flywheel you wind up by standing still, a tithe paid in your own health, or a gun that only fires on the beat of the music.</p>
+    <p>A weapon decides what comes out.</p>
+    <p>A rider decides what happens next.</p>
+    <p>Over three hundred authored combinations, and every pairing is balanced by construction: the powerings differ in how they fail, never in how much they pay. Play the one that matches how you move.</p>
+
+    <p class="ch">FIVE BANDS OF HELL</p>
+    <p>MORTAL is the base game. Clear it and descend to the HELL difficulties. Difficulty here buys new threats rather than longer health bars: mobs start carrying your own weapons against you, minibosses appear inside ordinary waves, and bosses arrive as formations of linked bodies &mdash; a bar that sweeps, a serpent that follows its own head, a pair bound together until the last phase splits them.</p>
+
+    <p class="ch">A SOUND CHIP, NOT A SOUNDTRACK</p>
+    <p>Ten chiptune tracks and ninety-nine sound effects run on one emulated eight-voice sound chip, generated sample by sample as you play. The score reads the run: it speeds up when you grab a power-up, sinks into its own low end when you are losing, and audibly thins out when a firefight steals its voices &mdash; because on real hardware, it would have.</p>
+    <p>Unlock the Audio Studio and it is handed to you. Pick the track, drive the tempo, stack a second layer in sync with the first, drag a ten-band EQ, watch a spectrum analyser, and record the result to a .wav file you can open anywhere.</p>
+
+    <p class="ch">FEATURES</p>
+    <p class="bul">Three modes &mdash; Quick Play (a single descent), Endless (climb until it kills you), and the Gauntlet (a run of levels with a boss at the end)</p>
+    <p class="bul">Five character slots with an eight-track progress bench</p>
+    <p class="bul">223 (74 Steam tied) achievements paying out score, mode unlocks and twenty-three cosmetics &mdash; trails, a hue-rotated arsenal, and nine followers including three pocket bosses</p>
+    <p class="bul">Seven enemy affixes and themed packs, each taught once and then remembered forever</p>
+    <p class="bul">Hunts &mdash; a mimic disguised as a wall, a quarry that runs the fight toward you, an assassination target behind a ring of guards</p>
+    <p class="bul">Full controller support, and every control on both keyboard and pad is rebindable</p>
+    <p class="bul">Deep video and audio options &mdash; bloom, dynamic lighting, wall shadows, screen shake and hit stop each with their own switch and strength. A full EQ panel to tweak sound your way while you play.</p>
+    <p class="bul">Customizations galore. Pets, trails, costumes, weapon recolors, and others abound.</p>
+
+    <p class="ch">PHOTOSENSITIVITY</p>
+    <p>This game uses bright, high-contrast neon visuals, bloom and screen flashes. A photosensitivity warning is shown on every launch, and the effects that cause it &mdash; bloom, camera shake, motion effects &mdash; can each be turned down or off from the options menu.</p>
+  </div>
+</div></section>
+
+<!-- ===================== TRAILER ===================== -->
+<section id="trailer"><div class="wrap">
+  <h2>Trailer</h2>
+  <div class="embed">
+    <iframe src="https://www.youtube-nocookie.com/embed/3RtronvQAzU" title="Hell is Neon Colored — trailer" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <p class="dim" style="margin-top:14px">Watch on YouTube: <a href="https://www.youtube.com/watch?v=3RtronvQAzU">youtube.com/watch?v=3RtronvQAzU</a></p>
+  <div class="dl">
+    <a href="assets/video/trailer_1080p.mp4" download>Download trailer <small>MP4 &middot; 1920&times;1080</small></a>
+    <!-- The poster and the b-roll do not exist yet; a dead download button is worse than
+         an absent one. Produce them, then uncomment.
+    <a href="assets/video/trailer_poster.png" download>Trailer poster <small>PNG &middot; 1920&times;1080</small></a>
+    <a href="assets/video/broll.mp4" download>B-roll footage <small>MP4 &middot; uncut gameplay, no commentary</small></a>
+    -->
+  </div>
+  <div class="note">
+    <p><strong>The trailer music is generated by the game itself.</strong> There is no licensed or third-party audio anywhere in it, so nothing in this trailer can trigger a Content ID claim. Use the audio as it stands.</p>
+  </div>
+</div></section>
+
+<!-- ===================== SCREENSHOTS ===================== -->
+<section id="screens"><div class="wrap">
+  <h2>Screenshots</h2>
+  <p class="dim">All 1920&times;1080, unmodified, no overlays and no debug UI. Click any image for the full-resolution file.</p>
+  <div class="grid">
+    <figure><a href="assets/screenshots/01-combat.jpg"><img src="assets/screenshots/01-combat.jpg" alt="A sustained beam cutting across a crowd of affixed enemies, over a hex-lattice floor, with floating damage numbers and the weapon diamond in the corner" loading="lazy"></a><figcaption>01 — Core combat</figcaption></figure>
+    <figure><a href="assets/screenshots/02-boss-formation.jpg"><img src="assets/screenshots/02-boss-formation.jpg" alt="Four linked boss bodies in a row detonating together inside a walled arena" loading="lazy"></a><figcaption>02 — A boss as a formation</figcaption></figure>
+    <figure><a href="assets/screenshots/03-weapons-lab.jpg"><img src="assets/screenshots/03-weapons-lab.jpg" alt="The weapons lab resolving a power, a primary and a secondary into an assembled weapon called Leech Ray" loading="lazy"></a><figcaption>03 — Weapons Lab</figcaption></figure>
+    <figure><a href="assets/screenshots/04-audio-studio.jpg"><img src="assets/screenshots/04-audio-studio.jpg" alt="The Audio Studio: a full-width spectrum analyser in spectrum colour, transport and equaliser panels, a second layer and a WAV recorder" loading="lazy"></a><figcaption>04 — The Audio Studio</figcaption></figure>
+    <figure><a href="assets/screenshots/05-power-up.jpg"><img src="assets/screenshots/05-power-up.jpg" alt="A power-up running, splitting the whole frame into red, green and blue fringes" loading="lazy"></a><figcaption>05 — A power-up running</figcaption></figure>
+    <figure><a href="assets/screenshots/06-quest-offer.jpg"><img src="assets/screenshots/06-quest-offer.jpg" alt="A quest offer card reading Kill every enemy with yes and no buttons, above a boss-scale octagon and a follower pet" loading="lazy"></a><figcaption>06 — A quest offered mid-run</figcaption></figure>
+    <figure><a href="assets/screenshots/07-gauntlet-tally.jpg"><img src="assets/screenshots/07-gauntlet-tally.jpg" alt="The Gauntlet cleared tally showing run time, kills, levels, score and the weapon piece it paid out" loading="lazy"></a><figcaption>07 — Gauntlet tally</figcaption></figure>
+  </div>
+
+  <!-- ANIMATED GIFS — COMMENTED OUT UNTIL THE FILES EXIST, not deleted. assets/gifs/ is
+       empty, and three broken <img> tags read as an abandoned project (which is the whole
+       reason assemble-presskit.ps1 reports missing captures loudly). Drop the three files
+       in, uncomment this block, and it works as written. -->
+  <!--
+  <h3>Animated GIFs</h3>
+  <p class="dim">Under 5&nbsp;MB each, sized for Discord, Reddit and article embeds.</p>
+  <div class="grid">
+    <figure><img src="assets/gifs/boss-sweep.gif" alt="A boss formation sweeping across the arena" loading="lazy"><figcaption>boss-sweep.gif</figcaption></figure>
+    <figure><img src="assets/gifs/flywheel.gif" alt="The flywheel gauge filling to maximum damage" loading="lazy"><figcaption>flywheel.gif</figcaption></figure>
+    <figure><img src="assets/gifs/studio.gif" alt="The audio studio spectrum bars" loading="lazy"><figcaption>studio.gif</figcaption></figure>
+  </div>
+  -->
+</div></section>
+
+<!-- ===================== LOGOS & ART ===================== -->
+<section id="art"><div class="wrap">
+  <h2>Logos &amp; art</h2>
+  <div class="note">
+    <p><strong>Every image on this page was drawn by the game's own code.</strong> The mark, the wordmark and the hex-lattice floor are rendered through the same bloom the game runs at 60fps, so the store art, the icon and the title screen are the same artwork by construction rather than by memory.</p>
+  </div>
+  <h3>Logo &amp; key art</h3>
+  <div class="logogrid">
+    <div class="cell"><img src="assets/logos/library_logo_1280x720.png" alt="Game logo, transparent"><div class="cap">Game logo &mdash; transparent PNG<br>1280&times;720</div></div>
+    <div class="cell"><img src="assets/logos/main_capsule_1232x706.png" alt="Main capsule / key art"><div class="cap">Main capsule &mdash; key art<br>1232&times;706</div></div>
+    <div class="cell"><img src="assets/logos/library_hero_3840x1240.png" alt="Library hero banner"><div class="cap">Library hero<br>3840&times;1240</div></div>
+    <div class="cell"><img src="assets/logos/page_background_1438x810.png" alt="Store page background"><div class="cap">Page background<br>1438&times;810</div></div>
+  </div>
+
+  <h3>Capsules</h3>
+  <div class="logogrid">
+    <div class="cell"><img src="assets/logos/header_capsule_920x430.png" alt="Header capsule"><div class="cap">Header capsule<br>920&times;430</div></div>
+    <div class="cell"><img src="assets/logos/library_header_920x430.png" alt="Library header capsule"><div class="cap">Library header<br>920&times;430</div></div>
+    <div class="cell"><img src="assets/logos/vertical_capsule_748x896.png" alt="Vertical capsule"><div class="cap">Vertical capsule<br>748&times;896</div></div>
+    <div class="cell"><img src="assets/logos/library_capsule_600x900.png" alt="Library capsule"><div class="cap">Library capsule<br>600&times;900</div></div>
+    <div class="cell"><img src="assets/logos/small_capsule_462x174.png" alt="Small capsule"><div class="cap">Small capsule<br>462&times;174</div></div>
+    <div class="cell"><img src="assets/logos/bundle_capsule_707x232.png" alt="Bundle capsule"><div class="cap">Bundle capsule<br>707&times;232</div></div>
+    <div class="cell"><img src="assets/logos/itch_cover_600x500.png" alt="itch.io cover"><div class="cap">itch.io cover<br>600&times;500</div></div>
+  </div>
+
+  <h3>Icons</h3>
+  <div class="logogrid">
+    <div class="cell"><img src="assets/icons/app-icon-256.png" alt="Desktop application icon" width="128"><div class="cap">Application icon<br>256 &middot; 128 &middot; 64 &middot; 48 &middot; 32 &middot; 16</div></div>
+    <div class="cell"><img src="assets/icons/community_icon_184x184.png" alt="Steam community icon" width="128"><div class="cap">Steam community icon<br>184&times;184</div></div>
+    <div class="cell"><img src="assets/icons/client_icon_32x32.png" alt="Steam client icon" width="64" style="image-rendering:pixelated"><div class="cap">Steam client icon<br>32&times;32 &mdash; shown 2&times;</div></div>
+    <div class="cell light"><img src="assets/logos/lowrevolution_logo.png" alt="Low Revolution developer logo" width="150"><div class="cap">Developer logo &mdash; Low Revolution</div></div>
+  </div>
+  <p class="dim" style="margin-top:14px">The application icon ladder is the <strong>full mark at every size</strong>. The icon actually shipped in the executable is a <em>mixed</em> ladder &mdash; the full mark at 256/128/64 and the head alone below it, because under about 48&nbsp;px the tail is a wisp and the heart is gone. Use the full mark for artwork and the head for anything small.</p>
+  <div class="dl">
+    <a class="primary" href="assets/hell-is-neon-colored-presskit.zip" download>Download everything <small>All assets, one zip</small></a>
+    <a href="assets/logos/" >Logos only</a>
+    <a href="assets/screenshots/">Screenshots only</a>
+  </div>
+</div></section>
+
+<!-- ===================== AUDIO ===================== -->
+<section id="audio"><div class="wrap">
+  <h2>Audio</h2>
+  <p>The soundtrack is not a set of files. It is a synthesizer and a sequencer that run while you play, on a deliberately constrained emulated sound chip: <strong>32&nbsp;kHz, sixteen-bit stereo, exactly eight voices, one global echo</strong>. Ten tracks and ninety-nine sound effects share those eight voices, which is why a dense firefight audibly thins the music out &mdash; the effects take the melody's voices, exactly as they would have on the hardware this is modelled on.</p>
+  <p>Every track's loudness was measured rather than chosen: all ten sit within 0.05&nbsp;LU of each other under ITU-R BS.1770 K-weighting, so switching track is never a jump in volume. What is deliberately not flattened is each track's own rise from calm to panic &mdash; the score getting louder as the player gets hurt is the feature.</p>
+  <div class="note">
+    <p><strong>The Audio Studio is a streaming feature.</strong> It hands the whole score to the player: pick a track, drive the tempo, stack a second layer locked to the first's step clock, drag a ten-band EQ, watch a spectrum analyser, and record to a <code>.wav</code> file that opens in any editor. Creators can make their own channel music out of it on stream and take it away with them.</p>
+  </div>
+  <!-- assets/audio/ is empty. Render a set from the in-game Audio Studio's WAV recorder --
+       that is what it was built for -- zip them, then uncomment.
+  <div class="dl">
+    <a href="assets/audio/hinc-selected-tracks.zip" download>Selected tracks <small>WAV &middot; rendered from the game</small></a>
+  </div>
+  -->
+</div></section>
+
+<!-- ===================== PERMISSIONS ===================== -->
+<section id="permission"><div class="wrap">
+  <h2>Permissions for creators &amp; press</h2>
+  <div class="note">
+    <p><strong>You have permission to monetize videos and streams of Hell is Neon Colored</strong>, on YouTube, Twitch, TikTok or anywhere else, in perpetuity, with no further permission needed and no revenue share owed. This applies to Let's Plays, reviews, streams, shorts, clips and edits, for the demo and the full game alike.</p>
+    <p>Every asset on this page may be reproduced in coverage of the game. No attribution is required beyond identifying the game.</p>
+  </div>
+  <p class="dim">All music and audio in the game and in the trailer is generated by the game's own code and is original to it. There is no licensed third-party audio anywhere in the game, so nothing in it should trigger a Content ID claim. If a claim does appear against footage of this game, contact us and we will dispute it.</p>
+  <h3>Review keys</h3>
+  <p>Steam keys are available to press and creators on request &mdash; email <a href="mailto:lowrevolution@pm.me">lowrevolution@pm.me</a>. A free public build is on <a href="https://revoincubus.itch.io/hell-is-neon-colored">itch.io</a> and needs no key at all.</p>
+</div></section>
+
+<!-- ===================== DEVELOPER ===================== -->
+<section id="dev"><div class="wrap">
+  <h2>About the developer</h2>
+  <p class="lede">Low Revolution is <strong>Aaron</strong>, who goes by <strong>Revoincubus</strong> &mdash; a solo developer working in Ireland.</p>
+  <!-- In the developer's own words, deliberately. The voice shift from the third-person
+       lede is the point: this is the paragraph a journalist quotes, and a quote reads
+       better as something a person said than as something a press kit asserted. -->
+  <p>&ldquo;I'm a full-time cybersecurity consultant, and Hell is Neon Colored is one of my passion projects. My approach to design comes out of Hemingway's approach to writing: cut everything to its core elements, and leave nothing in that isn't doing work. I'm pretty obsessed with doing that without ever sacrificing fun or visual joy &mdash; a game cut to the bone should still be a delight to look at and instantly readable at a glance. That is why this one is five colours, no art assets at all, and a soundtrack that writes itself while you play.&rdquo;</p>
+  <h3>Technical notes</h3>
+  <p class="dim">Hell is Neon Colored is built on LÖVE 11.5 &mdash; the same Lua framework behind <em>Balatro</em> &mdash; and ships with no binary runtime assets whatsoever. The distributable archive contains Lua source and three text files. Everything else, from the bloom and the dynamic lighting to the sound chip, the ninety-nine effects and the store artwork on this page, is generated by that code at runtime or at build time.</p>
+</div></section>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact"><div class="wrap">
+  <h2>Contact</h2>
+  <table class="facts">
+    <tr><td>Press &amp; keys</td><td><a href="mailto:lowrevolution@pm.me">lowrevolution@pm.me</a></td></tr>
+    <tr><td>Steam</td><td><a href="https://store.steampowered.com/app/5091990/Hell_is_Neon_Colored/">store.steampowered.com/app/5091990/Hell_is_Neon_Colored</a></td></tr>
+    <tr><td>itch.io</td><td><a href="https://revoincubus.itch.io/hell-is-neon-colored">revoincubus.itch.io/hell-is-neon-colored</a></td></tr>
+    <tr><td>YouTube</td><td><a href="https://www.youtube.com/watch?v=3RtronvQAzU">youtube.com/watch?v=3RtronvQAzU</a></td></tr>
+    <tr><td>Bluesky</td><td><a href="https://bsky.app/profile/lowrevolutiongames.bsky.social">@lowrevolutiongames.bsky.social</a></td></tr>
+    <tr><td>This press kit</td><td><span class="todo">PRESS KIT URL</span></td></tr>
+  </table>
+</div></section>
+
+<footer><div class="wrap">
+  <p>Hell is Neon Colored &copy; 2026 lowrevolution. All rights reserved.</p>
+  <!-- Registration of Business Names Act 1963 (Ireland): where you trade under a name
+       that is not your true name, the true name must appear alongside it on the press
+       kit, website and correspondence. This line is a legal duty, not a courtesy. -->
+  <p>Low Revolution is a registered business name of Aaron Smith.</p>
+  <p style="margin-top:16px">Built with LÖVE. Third-party notices ship with every build.</p>
+</div></footer>
+
+<script>
+// Copy-to-clipboard on the description blocks. Journalists paste these verbatim;
+// making that one click rather than a drag-select is the whole point of the section.
+// A bullet line joins with ONE newline and keeps its dash, or the long block pastes as
+// eight double-spaced orphan sentences and stops reading as a list at all.
+function cp(btn){
+  var block = btn.parentElement;
+  var text = '', first = true;
+  Array.from(block.querySelectorAll('p')).forEach(function(p){
+    var t = p.innerText.trim();
+    if (!t) return;
+    var bul = p.classList.contains('bul');
+    if (!first) text += bul ? '\n' : '\n\n';
+    text += bul ? '- ' + t : t;
+    first = false;
+  });
+  navigator.clipboard.writeText(text).then(function(){
+    btn.textContent = 'Copied';
+    btn.classList.add('done');
+    setTimeout(function(){ btn.textContent = 'Copy'; btn.classList.remove('done'); }, 1600);
+  });
+}
+</script>
+</body>
+</html>
