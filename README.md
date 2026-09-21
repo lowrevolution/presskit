@@ -2,17 +2,15 @@
 
 Live at **https://lowrevolution.github.io/presskit/**
 
-A self-contained press kit for *Hell is Neon Colored*, a neon action roguelike by
+A self-contained press kit for *Hell is Neon Colored*, a neon action RPG by
 [Low Revolution](https://store.steampowered.com/app/5091990/Hell_is_Neon_Colored/).
-One HTML file, no build step, no dependencies and no external requests — the same
-posture as the game itself.
+One HTML file, no build step, no dependencies with a YouTube trailer embed.
 
 Press and creators: everything here may be reproduced in coverage of the game, and
 you have standing permission to monetize videos and streams of it. Details, review
 keys and contact are on the page.
 
 - **Steam** — https://store.steampowered.com/app/5091990/Hell_is_Neon_Colored/
-- **itch.io** — https://revoincubus.itch.io/hell-is-neon-colored
 - **Bluesky** — https://bsky.app/profile/lowrevolutiongames.bsky.social
 - **Press** — lowrevolution@pm.me
 
@@ -21,16 +19,15 @@ keys and contact are on the page.
 | Path | Contents |
 |---|---|
 | `index.html` | The whole press kit. Fact sheet, descriptions at four lengths with copy-to-clipboard, trailer, screenshots, logo and capsule pack, audio notes, creator permissions, contact. |
-| `assets/logos/` | Eleven logos and capsules, plus the Low Revolution developer mark. |
-| `assets/icons/` | Favicon, the two Steamworks icons, and the application icon ladder from 16 to 256. |
+| `assets/logos/` | Current store, library and event artwork, transparent logo, and the Low Revolution developer mark. |
+| `assets/icons/` | Steam app and shortcut icons, PNG sizes from 16 to 1024, Windows ICO and Mac ICNS. |
 | `assets/screenshots/` | Seven 1920×1080 captures, unmodified. |
 | `assets/video/` | The trailer. |
 | `assets/hell-is-neon-colored-presskit.zip` | Logos, icons and screenshots in one download. Video is deliberately not in it, so the archive stays small. |
 
-Nearly every image here was **drawn by the game's own code** rather than painted —
-the mark, the wordmark and the hex-lattice floor are rendered through the same bloom
-the game runs at 60fps, so the store art, the executable icon and the title screen
-are the same artwork by construction rather than by memory.
+The promotional art uses the approved geometric cartoon direction, refreshed on
+21 September 2026. Gameplay screenshots are separate, unmodified captures.
+Short and long descriptions were synchronized with the live Steam store on the same date.
 
 `.nojekyll` is required, not decorative: without it GitHub Pages runs Jekyll over the
 repo and silently ignores any file whose name begins with an underscore.

@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hell is Neon Colored — Press Kit</title>
-<meta name="description" content="Press kit for Hell is Neon Colored, a minimalist neon action roguelike by Low Revolution. Screenshots, trailer, logos, fact sheet and press contact.">
+<meta name="description" content="A minimalist action RPG drenched in neon glow. Deep weapon customization and more than 350 weapon and ability combinations provide your arsenal as you delve deep in rogue-lite progression and complex mounting challenges.">
 <meta property="og:title" content="Hell is Neon Colored — Press Kit">
-<meta property="og:description" content="A minimalist neon action roguelike where you build the gun and the soundtrack is generated while you play.">
+<meta property="og:description" content="A minimalist action RPG drenched in neon glow. Deep weapon customization and more than 350 weapon and ability combinations provide your arsenal as you delve deep in rogue-lite progression and complex mounting challenges.">
 <!-- og:image and og:url must be ABSOLUTE. Scrapers fetch the tag value directly and do
      not resolve it against the page, so a relative path yields a link preview with no
      image — which is exactly the wrong outcome for a URL whose whole job is being pasted
@@ -15,7 +15,7 @@
 <meta property="og:url" content="https://lowrevolution.github.io/presskit/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" type="image/png" href="assets/icons/icon-32.png">
+<link rel="icon" type="image/png" href="assets/icons/icon_32.png">
 <style>
 /* ---------------------------------------------------------------------------
    Palette lifted straight from src/palette.lua, so the page and the game agree
@@ -96,7 +96,7 @@ table.facts tr:last-child td{border-bottom:0}
 
 /* --- copy blocks --------------------------------------------------------- */
 .copyblock{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:20px 22px;margin:0 0 18px;position:relative}
-.copyblock h4{margin:0 0 12px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;
+.copyblock h4{margin:0 0 12px;padding-right:64px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;
   text-transform:uppercase;color:var(--ink-faint);font-weight:600}
 .copyblock p:last-child{margin-bottom:0}
 /* The long block is the store description verbatim, so it carries that copy's own
@@ -161,6 +161,7 @@ ul.feat strong{color:var(--ink)}
 
 footer{padding:44px 0 64px;text-align:center;color:var(--ink-faint);font-size:13.5px}
 footer p{margin:0 0 8px}
+@media(max-width:1100px){nav ul{justify-content:flex-start}}
 @media(max-width:640px){
   table.facts td:first-child{width:130px;font-size:11px}
   section{padding:40px 0}
@@ -172,12 +173,12 @@ footer p{margin:0 0 8px}
 <header class="hero">
   <div class="wrap">
     <div class="wordmark"><span class="hell">HELL IS</span> <span class="rest">NEON COLORED</span></div>
-    <p class="tagline">A neon action roguelike where you build the gun — and the soundtrack is generated while you play.</p>
+    <p class="tagline">A minimalist action RPG drenched in neon glow.</p>
     <div class="badges">
-      <span class="badge">Windows &middot; Linux</span>
+      <span class="badge">Windows</span>
       <span class="badge">Single-player</span>
       <span class="badge go">Steam &middot; 11 November 2026</span>
-      <span class="badge">Free demo on itch.io</span>
+      <span class="badge">Free demo on Steam</span>
     </div>
     <img class="hero-key" src="assets/logos/main_capsule_1232x706.png" alt="Hell is Neon Colored key art">
   </div>
@@ -204,17 +205,16 @@ footer p{margin:0 0 8px}
     <tr><td>Developer</td><td>Low Revolution &mdash; solo developer, Ireland</td></tr>
     <tr><td>Publisher</td><td>Self-published</td></tr>
     <tr><td>Release date</td><td>11 November 2026</td></tr>
-    <tr><td>Platforms</td><td>Windows (x64), Linux</td></tr>
+    <tr><td>Platforms</td><td>Windows (x64)</td></tr>
     <tr><td>Price</td><td>$12.99 USD <span class="dim">&mdash; regional pricing via Steam</span></td></tr>
     <tr><td>Steam</td><td><a href="https://store.steampowered.com/app/5091990/Hell_is_Neon_Colored/">store.steampowered.com/app/5091990</a> <span class="dim">&mdash; App ID 5091990</span></td></tr>
-    <tr><td>itch.io</td><td><a href="https://revoincubus.itch.io/hell-is-neon-colored">revoincubus.itch.io/hell-is-neon-colored</a> <span class="dim">&mdash; free build</span></td></tr>
-    <tr><td>Demo</td><td>Free public build on itch.io; Steam demo pending approval</td></tr>
-    <tr><td>Engine</td><td>LÖVE 11.5 (Lua) &mdash; the framework behind <em>Balatro</em></td></tr>
+    <tr><td>Demo</td><td>Free demo available on Steam</td></tr>
+    <tr><td>Engine</td><td>Haxe + Heaps</td></tr>
     <tr><td>Players</td><td>Single-player only. No multiplayer, no online play.</td></tr>
     <tr><td>Languages</td><td>English</td></tr>
     <tr><td>Input</td><td>Keyboard &amp; mouse, full controller support &mdash; <strong>every control rebindable on both</strong></td></tr>
     <tr><td>Monetisation</td><td><strong>None.</strong> No in-app purchases, no microtransactions, no currency. The price is the whole price.</td></tr>
-    <tr><td>Data collected</td><td><strong>None.</strong> No analytics, no telemetry, no ads, no third-party SDKs. The game never touches a network.</td></tr>
+    <tr><td>Data collected</td><td><strong>None.</strong> No analytics, telemetry or ads. Steam features include achievements and Cloud saves.</td></tr>
     <tr><td>Content</td><td>Abstract, combat-focused. Bright high-contrast visuals &mdash; photosensitivity warning shown on every launch; bloom, screen shake and motion effects each have their own off switch.</td></tr>
     <tr><td>Press contact</td><td><a href="mailto:lowrevolution@pm.me">lowrevolution@pm.me</a></td></tr>
     <tr><td>Social</td><td><a href="https://bsky.app/profile/lowrevolutiongames.bsky.social">Bluesky</a> &middot; <a href="https://www.youtube.com/watch?v=3RtronvQAzU">YouTube</a></td></tr>
@@ -225,87 +225,60 @@ footer p{margin:0 0 8px}
 <section id="hooks"><div class="wrap">
   <h2>What makes it different</h2>
   <div class="hooks">
-    <div class="hook">
-      <h3>You build the gun</h3>
-      <p>A weapon is a <strong>powering</strong>, a <strong>weapon</strong> and a <strong>rider</strong>. The powering decides when it may fire and what that costs &mdash; an energy pool, a heat sink that locks you out if you push it, a flywheel you wind up by standing still, a tithe paid in your own health, or a gun that only fires on the beat of the music. Over three hundred authored combinations, and each powering is at budget when it is up: they differ in <em>how they fail</em>, never in how much they pay.</p>
-    </div>
-    <div class="hook">
-      <h3>There are no audio files</h3>
-      <p>Ten music tracks and ninety-nine sound effects are synthesized sample by sample on an emulated eight-voice sound chip. The score reads the run &mdash; it sinks into its own low end when you are losing, speeds up when you take a power-up, and audibly thins out when a firefight steals its voices, because on real hardware it would have.</p>
-    </div>
-    <div class="hook">
-      <h3>Nothing here is a file</h3>
-      <p>The game ships with <strong>zero binary assets</strong>. Every sound, shader, sprite, particle, the store art and the executable icon are drawn by the game's own code. The whole thing is Lua and the archive contains nothing but source.</p>
-    </div>
+    <div class="hook"><h3>Craft your arsenal</h3><p>Combine a power system, weapons and abilities to change how you fight. Mix beams with sprint power-ups, seek enemies with health-leeching rockets, or fire poisonous mortars over walls.</p></div>
+    <div class="hook"><h3>Choose your challenge</h3><p>One hundred difficulty levels let you set the pace. Enemies gain healing, summoning, stealth and weapons from your own arsenal, while bosses grow larger and more complex.</p></div>
+    <div class="hook"><h3>A live chiptune soundtrack</h3><p>Ten tracks and ninety-nine effects share an emulated eight-voice sound chip. The soundtrack reacts to the action, and the in-game sound studio lets you tune and record your own mixes.</p></div>
   </div>
-
   <h3>Features</h3>
   <ul class="feat">
-    <li><strong>Three modes</strong> &mdash; Quick Play (a single descent), Endless (climb until it kills you), and the Gauntlet (a run of levels with a boss at the end).</li>
-    <li><strong>Five bands of hell</strong> &mdash; MORTAL is the game. Clear it and HELL I opens, then II, III, IV. Each band buys new threats rather than longer health bars: mobs start carrying your own weapons against you, minibosses appear inside ordinary waves, and bosses arrive as formations of linked bodies.</li>
-    <li><strong>The Audio Studio</strong> &mdash; an unlockable music tool inside the game. Pick a track, drive the tempo, stack a second layer in sync, drag a ten-band EQ, watch a spectrum analyser, and record the result to a <code>.wav</code> you can open anywhere.</li>
-    <li><strong>223 achievements</strong> paying out score, mode unlocks and 23 cosmetics &mdash; trails, a hue-rotated arsenal, costumes, and nine followers including three pocket bosses.</li>
-    <li><strong>Seven enemy affixes</strong> and themed packs, each taught once and then remembered forever.</li>
-    <li><strong>Hunts</strong> &mdash; a mimic disguised as a wall, a quarry that runs the fight toward you, an assassination target behind a ring of guards.</li>
-    <li><strong>Deep accessibility options</strong> &mdash; bloom, dynamic lighting, wall shadows, screen shake and hit stop each with their own switch and strength, plus auto-aim and full rebinding.</li>
+    <li><strong>Deep progression and customization</strong> with interlocking weapon parts, abilities and power systems.</li>
+    <li><strong>One hundred difficulty levels</strong> and more than 120 combinations of enemy powers.</li>
+    <li><strong>Endless and Gauntlet modes</strong> with bosses that join the action beyond their own levels.</li>
+    <li><strong>Full controller support and control remapping</strong> across keyboard, mouse and gamepad.</li>
+    <li><strong>Optional auto-targeting and smart auto-fire</strong> to tailor how you aim and shoot.</li>
+    <li><strong>Detailed video and audio settings</strong>, including a full EQ and adjustable visual effects.</li>
   </ul>
 </div></section>
 
 <!-- ===================== DESCRIPTIONS ===================== -->
-<section id="copy"><div class="wrap">
-  <h2>Descriptions <span class="dim" style="font-family:var(--sans);text-transform:none;letter-spacing:0;font-size:13px">&mdash; copy and paste, no attribution needed</span></h2>
-
-  <div class="copyblock">
-    <button class="copybtn" onclick="cp(this)">Copy</button>
-    <h4>One sentence</h4>
-    <p>A neon action roguelike where you build the gun and the soundtrack is generated while you play.</p>
-  </div>
-
-  <div class="copyblock">
-    <button class="copybtn" onclick="cp(this)">Copy</button>
-    <h4>Short &mdash; ~50 words</h4>
-    <p>Hell is Neon Colored is a minimalist action roguelike drawn in five colours and lit entirely by the things trying to kill you. Assemble weapons from eight power sources and twenty-odd parts, then find out how far down your build can take you. Every sound you hear is synthesized while you play.</p>
-  </div>
-
-  <div class="copyblock">
-    <button class="copybtn" onclick="cp(this)">Copy</button>
-    <h4>Medium &mdash; ~100 words</h4>
-    <p>Hell is Neon Colored is a minimalist neon action roguelike built in LÖVE, the framework behind Balatro. A weapon here is three decisions: a powering that decides when you may fire and what that costs, a weapon that decides what comes out, and a rider that decides what happens next &mdash; over three hundred authored combinations, each fair by construction. Five difficulty bands escalate by adding threats rather than health bars. And there are no audio files in the game: ten tracks and ninety-nine effects run on an emulated eight-voice sound chip, synthesized sample by sample as you play.</p>
-  </div>
-
-  <div class="copyblock">
-    <button class="copybtn" onclick="cp(this)">Copy</button>
-    <h4>Long &mdash; the store description, verbatim</h4>
-    <p class="ch">HELL IS NEON COLORED</p>
-    <p>Descend through a procedurally built underworld drawn in five colours and lit entirely by the things trying to kill you. Every floor is generated the moment you enter it. Every weapon is something you assembled. Every sound you hear &mdash; the score, the explosions, the sword &mdash; is synthesized note by note while you play. There are no audio files in this game.</p>
-
-    <p class="ch">BUILD THE WEAPON, NOT THE LOADOUT</p>
-    <p>A weapon here is three decisions.</p>
-    <p>A powering decides when it may fire and what that costs &mdash; an energy pool, a heat sink that locks out when you push it, a magazine, a flywheel you wind up by standing still, a tithe paid in your own health, or a gun that only fires on the beat of the music.</p>
-    <p>A weapon decides what comes out.</p>
-    <p>A rider decides what happens next.</p>
-    <p>Over three hundred authored combinations, and every pairing is balanced by construction: the powerings differ in how they fail, never in how much they pay. Play the one that matches how you move.</p>
-
-    <p class="ch">FIVE BANDS OF HELL</p>
-    <p>MORTAL is the base game. Clear it and descend to the HELL difficulties. Difficulty here buys new threats rather than longer health bars: mobs start carrying your own weapons against you, minibosses appear inside ordinary waves, and bosses arrive as formations of linked bodies &mdash; a bar that sweeps, a serpent that follows its own head, a pair bound together until the last phase splits them.</p>
-
-    <p class="ch">A SOUND CHIP, NOT A SOUNDTRACK</p>
-    <p>Ten chiptune tracks and ninety-nine sound effects run on one emulated eight-voice sound chip, generated sample by sample as you play. The score reads the run: it speeds up when you grab a power-up, sinks into its own low end when you are losing, and audibly thins out when a firefight steals its voices &mdash; because on real hardware, it would have.</p>
-    <p>Unlock the Audio Studio and it is handed to you. Pick the track, drive the tempo, stack a second layer in sync with the first, drag a ten-band EQ, watch a spectrum analyser, and record the result to a .wav file you can open anywhere.</p>
-
-    <p class="ch">FEATURES</p>
-    <p class="bul">Three modes &mdash; Quick Play (a single descent), Endless (climb until it kills you), and the Gauntlet (a run of levels with a boss at the end)</p>
-    <p class="bul">Five character slots with an eight-track progress bench</p>
-    <p class="bul">223 (74 Steam tied) achievements paying out score, mode unlocks and twenty-three cosmetics &mdash; trails, a hue-rotated arsenal, and nine followers including three pocket bosses</p>
-    <p class="bul">Seven enemy affixes and themed packs, each taught once and then remembered forever</p>
-    <p class="bul">Hunts &mdash; a mimic disguised as a wall, a quarry that runs the fight toward you, an assassination target behind a ring of guards</p>
-    <p class="bul">Full controller support, and every control on both keyboard and pad is rebindable</p>
-    <p class="bul">Deep video and audio options &mdash; bloom, dynamic lighting, wall shadows, screen shake and hit stop each with their own switch and strength. A full EQ panel to tweak sound your way while you play.</p>
-    <p class="bul">Customizations galore. Pets, trails, costumes, weapon recolors, and others abound.</p>
-
-    <p class="ch">PHOTOSENSITIVITY</p>
-    <p>This game uses bright, high-contrast neon visuals, bloom and screen flashes. A photosensitivity warning is shown on every launch, and the effects that cause it &mdash; bloom, camera shake, motion effects &mdash; can each be turned down or off from the options menu.</p>
-  </div>
+<section id="copy"><div class="wrap"><h2>Descriptions</h2><p class="dim">Copy and paste, no attribution needed. Short and long descriptions from <a href="https://store.steampowered.com/app/5091990/Hell_is_Neon_Colored/">Steam</a>, updated 21 September 2026.</p>
+<div class="copyblock"><button class="copybtn" onclick="cp(this)">Copy</button><h4>One sentence</h4>
+<p>A minimalist action RPG drenched in neon glow.</p>
+</div>
+<div class="copyblock"><button class="copybtn" onclick="cp(this)">Copy</button><h4>Short — Steam description</h4>
+<p>A minimalist action RPG drenched in neon glow. Deep weapon customization and more than 350 weapon and ability combinations provide your arsenal as you delve deep in rogue-lite progression and complex mounting challenges.</p>
+</div>
+<div class="copyblock"><button class="copybtn" onclick="cp(this)">Copy</button><h4>Medium — press summary</h4>
+<p>Hell is Neon Colored is a neon action RPG with deep progression and weapon customization. Combine power systems, weapons and abilities to craft your arsenal, then choose from one hundred levels of difficulty. Enemies draw from the same arsenal, gaining powers including healing, summoning and stealth. A live chiptune soundtrack reacts to the action, with an in-game EQ and sound studio for making your own mixes. Remap every control, tune the visuals and audio, and use optional auto-targeting and smart auto-fire.</p>
+</div>
+<div class="copyblock"><button class="copybtn" onclick="cp(this)">Copy</button><h4>Long — Steam description, verbatim</h4>
+    <p class="ch">Hell Is Neon Colored</p>
+    <p>A full-featured action RPG with deep progression and customization that strips away every unnecessary feature to reveal a neon-colored, high-speed arcade experience that builds with your skill and progress.</p>
+    <p class="ch">Craft your arsenal</p>
+    <p>Weapons and abilities are made of 3 interlocking parts that change everything about their use and gameplay.</p>
+    <p>You start with the system that powers the weapon, from cyclic iteration and ammo-based systems, to weapons that only fire on the beat of the music.</p>
+    <p>From there you combine complex weapon parts and abilities. Mix a beam weapon with a sprint powerup, leech health with enemy seeking rockets, enter stealth and crush your enemies unseen, or fire poisonous mortars over walls.</p>
+    <p>More than 300 combinations of weapons and abilities carefully balanced for customizable play await.</p>
+    <p class="ch">Difficulty that matches your drive</p>
+    <p>One hundred carefully tuned levels of difficulty await you.</p>
+    <p>With enemies that mirror your abilities, grow stronger and smarter, and gain powers like healing, summoning, stealth and complex ranged attacks that pull from the same arsenal you do.</p>
+    <p>Bosses that grow more larger and more complex as the game progresses also escape their boss level constraints and make their way into Endless Mode and Gauntlet Mode.</p>
+    <p>More than 120 brutal combinations of enemy powers build to make a a challenge that you control.</p>
+    <p>Choose your difficulty. Want to grind and power up to roll through your enemies, that&#x27;s possible. Want to push the cutting edge and finish all 100 difficulties with the highest possible challenge? The game meets you there.</p>
+    <p class="ch">Sounds like Retro - only better</p>
+    <p>Ten chiptune tracks and ninety-nine effects run through one emulated eight voice sound chip.</p>
+    <p>The pace of the game and the danger level reacts through the soundtrack, pace and drive increasing as risk does.</p>
+    <p>A full featured EQ and sound studio in-game to play with and cut your own soundtrack options.</p>
+    <p class="ch">Customization that respects you</p>
+    <p class="bul">Full control remapping - every action can be remapped across keyboards, mouse, and gamepads</p>
+    <p class="bul">Full controller support - play it on your favorite controller or Steam Deck</p>
+    <p class="bul">Deep video customizations - Tune and tweak every video option and setting</p>
+    <p class="bul">Complex audio tuning - not just volume sliders, a full EQ for your tuning purposes</p>
+    <p class="bul">Full auto-target - give your right thumb a break and let the game handle targeting</p>
+    <p class="bul">Full and smart auto-fire - target and destroy what matter and cycle firing smartly</p>
+    <p class="ch">Warning</p>
+    <p>This game uses bright, high-contrast neon visuals, bloom and screen flashes. A photosensitivity warning is shown on every launch, and the effects that cause it — bloom, camera shake, motion effects — can each be turned down or off from the options menu.</p>
+</div>
 </div></section>
 
 <!-- ===================== TRAILER ===================== -->
@@ -358,49 +331,7 @@ footer p{margin:0 0 8px}
 </div></section>
 
 <!-- ===================== LOGOS & ART ===================== -->
-<section id="art"><div class="wrap">
-  <h2>Logos &amp; art</h2>
-  <div class="note">
-    <p><strong>Every image on this page was drawn by the game's own code.</strong> The mark, the wordmark and the hex-lattice floor are rendered through the same bloom the game runs at 60fps, so the store art, the icon and the title screen are the same artwork by construction rather than by memory.</p>
-  </div>
-  <h3>Logo &amp; key art</h3>
-  <div class="logogrid">
-    <div class="cell"><img src="assets/logos/library_logo_1280x720.png" alt="Game logo, transparent"><div class="cap">Game logo &mdash; transparent PNG<br>1280&times;720</div></div>
-    <div class="cell"><img src="assets/logos/main_capsule_1232x706.png" alt="Main capsule / key art"><div class="cap">Main capsule &mdash; key art<br>1232&times;706</div></div>
-    <div class="cell"><img src="assets/logos/library_hero_3840x1240.png" alt="Library hero banner"><div class="cap">Library hero<br>3840&times;1240</div></div>
-    <div class="cell"><img src="assets/logos/page_background_1438x810.png" alt="Store page background"><div class="cap">Page background<br>1438&times;810</div></div>
-  </div>
-
-  <h3>Capsules</h3>
-  <div class="logogrid">
-    <div class="cell"><img src="assets/logos/header_capsule_920x430.png" alt="Header capsule"><div class="cap">Header capsule<br>920&times;430</div></div>
-    <div class="cell"><img src="assets/logos/library_header_920x430.png" alt="Library header capsule"><div class="cap">Library header<br>920&times;430</div></div>
-    <div class="cell"><img src="assets/logos/vertical_capsule_748x896.png" alt="Vertical capsule"><div class="cap">Vertical capsule<br>748&times;896</div></div>
-    <div class="cell"><img src="assets/logos/library_capsule_600x900.png" alt="Library capsule"><div class="cap">Library capsule<br>600&times;900</div></div>
-    <div class="cell"><img src="assets/logos/small_capsule_462x174.png" alt="Small capsule"><div class="cap">Small capsule<br>462&times;174</div></div>
-    <div class="cell"><img src="assets/logos/bundle_capsule_707x232.png" alt="Bundle capsule"><div class="cap">Bundle capsule<br>707&times;232</div></div>
-    <div class="cell"><img src="assets/logos/itch_cover_600x500.png" alt="itch.io cover"><div class="cap">itch.io cover<br>600&times;500</div></div>
-  </div>
-
-  <h3>Icons</h3>
-  <div class="logogrid">
-    <div class="cell"><img src="assets/icons/app-icon-256.png" alt="Desktop application icon" width="128"><div class="cap">Application icon<br>256 &middot; 128 &middot; 64 &middot; 48 &middot; 32 &middot; 16</div></div>
-    <div class="cell"><img src="assets/icons/community_icon_184x184.png" alt="Steam community icon" width="128"><div class="cap">Steam community icon<br>184&times;184</div></div>
-    <div class="cell"><img src="assets/icons/client_icon_32x32.png" alt="Steam client icon" width="64" style="image-rendering:pixelated"><div class="cap">Steam client icon<br>32&times;32 &mdash; shown 2&times;</div></div>
-    <div class="cell light"><img src="assets/logos/lowrevolution_logo.png" alt="Low Revolution developer logo" width="150"><div class="cap">Developer logo &mdash; Low Revolution</div></div>
-  </div>
-  <p class="dim" style="margin-top:14px">The application icon ladder is the <strong>full mark at every size</strong>. The icon actually shipped in the executable is a <em>mixed</em> ladder &mdash; the full mark at 256/128/64 and the head alone below it, because under about 48&nbsp;px the tail is a wisp and the heart is gone. Use the full mark for artwork and the head for anything small.</p>
-  <div class="dl">
-    <a class="primary" href="assets/hell-is-neon-colored-presskit.zip" download>Download everything <small>Logos, icons and screenshots &middot; one zip</small></a>
-    <!-- These MUST be repo tree URLs, not "assets/logos/". GitHub Pages does not serve
-         directory listings, so a bare folder href is a 404 in production — and it 404s
-         ONLY there, because python -m http.server auto-generates an index and the links
-         look fine in local preview. The repo browser is the better answer anyway: press
-         can see and grab one file instead of taking the whole pack. -->
-    <a href="https://github.com/lowrevolution/presskit/tree/main/assets/logos">Browse logos</a>
-    <a href="https://github.com/lowrevolution/presskit/tree/main/assets/screenshots">Browse screenshots</a>
-  </div>
-</div></section>
+<section id="art"><div class="wrap"><h2>Logos &amp; art</h2><p class="dim">The latest promotional artwork, logos and icons for coverage of Hell is Neon Colored. Click any image to download the full-resolution file.</p><h3>Logo &amp; key art</h3><div class="logogrid"><div class="cell"><a href="assets/logos/library_logo.png" download><img src="assets/logos/library_logo.png" alt="Game logo — transparent PNG" loading="lazy"></a><div class="cap">Game logo — transparent PNG<br>720&times;720</div></div><div class="cell"><a href="assets/logos/main_capsule_1232x706.png" download><img src="assets/logos/main_capsule_1232x706.png" alt="Main capsule — key art" loading="lazy"></a><div class="cap">Main capsule — key art<br>1232&times;706</div></div><div class="cell"><a href="assets/logos/library_hero_3840x1240.png" download><img src="assets/logos/library_hero_3840x1240.png" alt="Library hero" loading="lazy"></a><div class="cap">Library hero<br>3840&times;1240</div></div><div class="cell"><a href="assets/logos/page_background_1438x810.jpg" download><img src="assets/logos/page_background_1438x810.jpg" alt="Page background" loading="lazy"></a><div class="cap">Page background<br>1438&times;810</div></div></div><h3>Capsules</h3><div class="logogrid"><div class="cell"><a href="assets/logos/header_capsule_920x430.png" download><img src="assets/logos/header_capsule_920x430.png" alt="Header capsule" loading="lazy"></a><div class="cap">Header capsule<br>920&times;430</div></div><div class="cell"><a href="assets/logos/library_header_920x430.png" download><img src="assets/logos/library_header_920x430.png" alt="Library header" loading="lazy"></a><div class="cap">Library header<br>920&times;430</div></div><div class="cell"><a href="assets/logos/vertical_capsule_748x896.png" download><img src="assets/logos/vertical_capsule_748x896.png" alt="Vertical capsule" loading="lazy"></a><div class="cap">Vertical capsule<br>748&times;896</div></div><div class="cell"><a href="assets/logos/library_capsule_600x900.png" download><img src="assets/logos/library_capsule_600x900.png" alt="Library capsule" loading="lazy"></a><div class="cap">Library capsule<br>600&times;900</div></div><div class="cell"><a href="assets/logos/small_capsule_462x174.png" download><img src="assets/logos/small_capsule_462x174.png" alt="Small capsule" loading="lazy"></a><div class="cap">Small capsule<br>462&times;174</div></div></div><h3>Event artwork</h3><div class="logogrid"><div class="cell"><a href="assets/logos/event_cover_800x450.png" download><img src="assets/logos/event_cover_800x450.png" alt="Event cover" loading="lazy"></a><div class="cap">Event cover<br>800&times;450</div></div><div class="cell"><a href="assets/logos/event_header_1920x622.png" download><img src="assets/logos/event_header_1920x622.png" alt="Event header" loading="lazy"></a><div class="cap">Event header<br>1920&times;622</div></div></div><h3>Icons</h3><div class="logogrid"><div class="cell"><a href="assets/icons/shortcut_icon_512x512.png" download><img src="assets/icons/shortcut_icon_512x512.png" alt="Shortcut icon" loading="lazy"></a><div class="cap">Shortcut icon<br>512&times;512</div></div><div class="cell"><a href="assets/icons/app_icon_184x184.jpg" download><img src="assets/icons/app_icon_184x184.jpg" alt="Steam app icon" loading="lazy"></a><div class="cap">Steam app icon<br>184&times;184</div></div><div class="cell light"><img src="assets/logos/lowrevolution_logo.png" alt="Low Revolution developer logo" width="150"><div class="cap">Developer logo — Low Revolution</div></div></div><p class="dim" style="margin-top:14px">The download includes PNG icons from 16 to 1024 pixels, plus Windows ICO and Mac ICNS files.</p><div class="dl"><a class="primary" href="assets/hell-is-neon-colored-presskit.zip" download>Download everything <small>Logos, icons and screenshots &middot; one zip</small></a><a href="https://github.com/lowrevolution/presskit/tree/main/assets/logos">Browse logos</a><a href="https://github.com/lowrevolution/presskit/tree/main/assets/screenshots">Browse screenshots</a></div></div></section>
 
 <!-- ===================== AUDIO ===================== -->
 <section id="audio"><div class="wrap">
@@ -427,7 +358,7 @@ footer p{margin:0 0 8px}
   </div>
   <p class="dim">All music and audio in the game and in the trailer is generated by the game's own code and is original to it. There is no licensed third-party audio anywhere in the game, so nothing in it should trigger a Content ID claim. If a claim does appear against footage of this game, contact us and we will dispute it.</p>
   <h3>Review keys</h3>
-  <p>Steam keys are available to press and creators on request &mdash; email <a href="mailto:lowrevolution@pm.me">lowrevolution@pm.me</a>. A free public build is on <a href="https://revoincubus.itch.io/hell-is-neon-colored">itch.io</a> and needs no key at all.</p>
+  <p>Steam keys are available to press and creators on request &mdash; email <a href="mailto:lowrevolution@pm.me">lowrevolution@pm.me</a>. A free demo is available on <a href="https://store.steampowered.com/app/5091990/Hell_is_Neon_Colored/">Steam</a> and needs no key.</p>
 </div></section>
 
 <!-- ===================== DEVELOPER ===================== -->
@@ -439,7 +370,7 @@ footer p{margin:0 0 8px}
        better as something a person said than as something a press kit asserted. -->
   <p>&ldquo;I'm a full-time cybersecurity consultant, and Hell is Neon Colored is one of my passion projects. My approach to design comes out of Hemingway's approach to writing: cut everything to its core elements, and leave nothing in that isn't doing work. I'm pretty obsessed with doing that without ever sacrificing fun or visual joy &mdash; a game cut to the bone should still be a delight to look at and instantly readable at a glance. That is why this one is five colours, no art assets at all, and a soundtrack that writes itself while you play.&rdquo;</p>
   <h3>Technical notes</h3>
-  <p class="dim">Hell is Neon Colored is built on LÖVE 11.5 &mdash; the same Lua framework behind <em>Balatro</em> &mdash; and ships with no binary runtime assets whatsoever. The distributable archive contains Lua source and three text files. Everything else, from the bloom and the dynamic lighting to the sound chip, the ninety-nine effects and the store artwork on this page, is generated by that code at runtime or at build time.</p>
+  <p class="dim">The current Windows build uses Haxe and Heaps. Its chiptune music and sound effects are synthesized live by an emulated sound chip.</p>
 </div></section>
 
 <!-- ===================== CONTACT ===================== -->
@@ -448,7 +379,6 @@ footer p{margin:0 0 8px}
   <table class="facts">
     <tr><td>Press &amp; keys</td><td><a href="mailto:lowrevolution@pm.me">lowrevolution@pm.me</a></td></tr>
     <tr><td>Steam</td><td><a href="https://store.steampowered.com/app/5091990/Hell_is_Neon_Colored/">store.steampowered.com/app/5091990/Hell_is_Neon_Colored</a></td></tr>
-    <tr><td>itch.io</td><td><a href="https://revoincubus.itch.io/hell-is-neon-colored">revoincubus.itch.io/hell-is-neon-colored</a></td></tr>
     <tr><td>YouTube</td><td><a href="https://www.youtube.com/watch?v=3RtronvQAzU">youtube.com/watch?v=3RtronvQAzU</a></td></tr>
     <tr><td>Bluesky</td><td><a href="https://bsky.app/profile/lowrevolutiongames.bsky.social">@lowrevolutiongames.bsky.social</a></td></tr>
     <tr><td>This press kit</td><td><a href="https://lowrevolution.github.io/presskit/">lowrevolution.github.io/presskit</a></td></tr>
@@ -461,7 +391,7 @@ footer p{margin:0 0 8px}
        that is not your true name, the true name must appear alongside it on the press
        kit, website and correspondence. This line is a legal duty, not a courtesy. -->
   <p>Low Revolution is a registered business name of Aaron Smith.</p>
-  <p style="margin-top:16px">Built with LÖVE. Third-party notices ship with every build.</p>
+  <p style="margin-top:16px">Third-party notices ship with every build.</p>
 </div></footer>
 
 <script>
